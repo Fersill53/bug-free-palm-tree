@@ -23,9 +23,10 @@
 
 
 const curDay = document.getElementById('currentDay');
-const saveBtn = document.getElementById('save')
-const todDat = document.getElementById('currentDay')
-const eight = document.getElementById('hour-8')
+const saveBtn = document.getElementById('save');
+const todDat = document.getElementById('currentDay');
+
+
 const nine = document.getElementById('hour-9')
 const eleven = document.getElementById('hour-11')
 const tweleve = document.getElementById('hour-12')
@@ -35,11 +36,24 @@ const three = document.getElementById('hour-15')
 const four = document.getElementById('hour-16')
 const five = document.getElementById('hour-17')
 
-const today = dayjs();
-    $('currentDay').text(today.format('MMM D, YYYY'));
+const date = dayjs();
+    $('#currentDay').text(date.format('MMM D, YYYY'));
 
 
-//saveBtn.addEventListener('click', function(event)) {
-   // localStorage.setItem("save")
-//}
-    
+$('.saveBtn').on('click', function(event) {
+    console.log(event)
+    console.log($(this).prev().val())
+    console.log($(this).parent().attr('id'))
+    localStorage.setItem(($(this).parent().attr('id')), ($(this).prev().val()))
+});
+
+var nineText = localStorage.getItem('hour-9')
+$('#hour-9 textarea').val(nineText)
+
+const currHR = dayjs().hour()
+
+var hourNine = 'hour-9'
+var newHourNine = hourNine.split('-')
+if (currHR < newHourNine[1]) {
+    $('#hour-9 textarea').val(nineText)
+} else if currHR > 
