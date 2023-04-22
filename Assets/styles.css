@@ -11,6 +11,9 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
+  textarea:hover {
+    border: 3px solid violet;
+  }
   
   .description {
     white-space: pre-wrap;
@@ -31,12 +34,12 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #000000;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: blue;
     color: white;
   }
   
@@ -56,5 +59,8 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+  }
+  .saveBtn:hover {
+    border: violet 2px solid;
   }
   
