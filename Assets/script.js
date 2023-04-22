@@ -88,3 +88,37 @@ var newHourOne = hourOne.split('-')
     if (currHR < newHourOne[1]) {
         $('#hour-13 textarea').val(oneText)
     }
+
+    var twoText = localStorage.getItem('hour-14')
+    $('#hour-14 textarea').val(twoText)
+var hourTwo = 'hour-14'
+var newHourTwo = hourTwo.split('-')
+    if (currHR < newHourTwo[1]) {
+        $('#hour-14 textarea').val(twoText)
+    }
+
+    var threeText = localStorage.getItem('hour-15')
+    $('#hour-15 textarea').val(threeText)
+var hourThree = 'hour-15'
+var newHourThree = hourThree.split('-')
+    if (currHR < newHourTen[1]) {
+        $('#hour-15 textarea').val(threeText)
+    }
+
+    var fourText = localStorage.getItem('hour-16')
+    $('#hour-16 textarea').val(fourText)
+var hourFour = 'hour-16'
+var newHourFour = hourFour.split('-')
+    if (currHR < newHourFour[1]) {
+        $('#hour-16 textarea').val(fourText)
+    }
+
+    var fiveText = localStorage.getItem('hour-17')
+    $('#hour-17 textarea').val(fiveText)
+var hourFive = 'hour-17'
+var newHourFive = hourFive.split('-')
+    if (currHR < newHourFive[1]) {
+        $('#hour-17 textarea').val(fiveText)
+    }
+
+   
