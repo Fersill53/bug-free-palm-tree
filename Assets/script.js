@@ -38,7 +38,7 @@ const four = document.getElementById('hour-16');
 const five = document.getElementById('hour-17');
 const currHR = dayjs().hour()
 const date = dayjs();
-    $('#currentDay').text(date.format('MMM D, YYYY'));
+    $('#currentDay').text(date.format('MMM D, YYYY, HH:mm:ss '));
 
 
 $('.saveBtn').on('click', function(event) {
@@ -54,15 +54,16 @@ var nineText = localStorage.getItem('hour-9')
 var hourNine = 'hour-9'
 var newHourNine = hourNine.split('-')
 if (currHR < newHourNine[1]) {
-    $('#hour-9 textarea').val(nineText)
-} //else if currHR > 
+    $('#hour-9 textarea').addClass('past')
+} //else if (currHR > newHourNine[1]) {
+   
 
 var tenText = localStorage.getItem('hour-10')
     $('#hour-10 textarea').val(tenText)
 var hourTen = 'hour-10'
 var newHourTen = hourTen.split('-')
     if (currHR < newHourTen[1]) {
-        $('#hour-10 textarea').val(tenText)
+        $('#hour-10 textarea').addClass('past')
     }
 
     var elevenText = localStorage.getItem('hour-11')
@@ -70,7 +71,7 @@ var newHourTen = hourTen.split('-')
 var hourEleven = 'hour-11'
 var newHourEleven = hourEleven.split('-')
     if (currHR < newHourEleven[1]) {
-        $('#hour-11 textarea').val(elevenText)
+        $('#hour-11 textarea').addClass('past')
     }
 
     var twelveText = localStorage.getItem('hour-12')
@@ -78,7 +79,7 @@ var newHourEleven = hourEleven.split('-')
 var hourTwelve = 'hour-12'
 var newHourTwelve = hourTwelve.split('-')
     if (currHR < newHourTwelve[1]) {
-        $('#hour-12 textarea').val(twelveText)
+        $('#hour-12 textarea').addClass('past')
     }
 
     var oneText = localStorage.getItem('hour-13')
@@ -86,7 +87,7 @@ var newHourTwelve = hourTwelve.split('-')
 var hourOne = 'hour-13'
 var newHourOne = hourOne.split('-')
     if (currHR < newHourOne[1]) {
-        $('#hour-13 textarea').val(oneText)
+        $('#hour-13 textarea').addClass('past')
     }
 
     var twoText = localStorage.getItem('hour-14')
@@ -94,7 +95,7 @@ var newHourOne = hourOne.split('-')
 var hourTwo = 'hour-14'
 var newHourTwo = hourTwo.split('-')
     if (currHR < newHourTwo[1]) {
-        $('#hour-14 textarea').val(twoText)
+        $('#hour-14 textarea').addClass('past')
     }
 
     var threeText = localStorage.getItem('hour-15')
@@ -102,7 +103,7 @@ var newHourTwo = hourTwo.split('-')
 var hourThree = 'hour-15'
 var newHourThree = hourThree.split('-')
     if (currHR < newHourTen[1]) {
-        $('#hour-15 textarea').val(threeText)
+        $('#hour-15 textarea').addClass('past')
     }
 
     var fourText = localStorage.getItem('hour-16')
@@ -110,7 +111,7 @@ var newHourThree = hourThree.split('-')
 var hourFour = 'hour-16'
 var newHourFour = hourFour.split('-')
     if (currHR < newHourFour[1]) {
-        $('#hour-16 textarea').val(fourText)
+        $('#hour-16 textarea').addClass('past')
     }
 
     var fiveText = localStorage.getItem('hour-17')
@@ -118,7 +119,7 @@ var newHourFour = hourFour.split('-')
 var hourFive = 'hour-17'
 var newHourFive = hourFive.split('-')
     if (currHR < newHourFive[1]) {
-        $('#hour-17 textarea').val(fiveText)
+        $('#hour-17 textarea').addClass('past')
     }
 
    
