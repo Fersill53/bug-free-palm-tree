@@ -27,15 +27,16 @@ const saveBtn = document.getElementById('save');
 const todDat = document.getElementById('currentDay');
 
 
-const nine = document.getElementById('hour-9')
-const eleven = document.getElementById('hour-11')
-const tweleve = document.getElementById('hour-12')
-const one = document.getElementById('hour-13')
-const two = document.getElementById('hour-14')
-const three = document.getElementById('hour-15')
-const four = document.getElementById('hour-16')
-const five = document.getElementById('hour-17')
-
+const nine = document.getElementById('hour-9');
+const ten = document.getElementById('hour-10');
+const eleven = document.getElementById('hour-11');
+const tweleve = document.getElementById('hour-12');
+const one = document.getElementById('hour-13');
+const two = document.getElementById('hour-14');
+const three = document.getElementById('hour-15');
+const four = document.getElementById('hour-16');
+const five = document.getElementById('hour-17');
+const currHR = dayjs().hour()
 const date = dayjs();
     $('#currentDay').text(date.format('MMM D, YYYY'));
 
@@ -48,12 +49,42 @@ $('.saveBtn').on('click', function(event) {
 });
 
 var nineText = localStorage.getItem('hour-9')
-$('#hour-9 textarea').val(nineText)
-
-const currHR = dayjs().hour()
+    $('#hour-9 textarea').val(nineText)
 
 var hourNine = 'hour-9'
 var newHourNine = hourNine.split('-')
 if (currHR < newHourNine[1]) {
     $('#hour-9 textarea').val(nineText)
-} else if currHR > 
+} //else if currHR > 
+
+var tenText = localStorage.getItem('hour-10')
+    $('#hour-10 textarea').val(tenText)
+var hourTen = 'hour-10'
+var newHourTen = hourTen.split('-')
+    if (currHR < newHourTen[1]) {
+        $('#hour-10 textarea').val(tenText)
+    }
+
+    var elevenText = localStorage.getItem('hour-11')
+    $('#hour-11 textarea').val(elevenText)
+var hourEleven = 'hour-11'
+var newHourEleven = hourEleven.split('-')
+    if (currHR < newHourEleven[1]) {
+        $('#hour-11 textarea').val(elevenText)
+    }
+
+    var twelveText = localStorage.getItem('hour-12')
+    $('#hour-12 textarea').val(twelveText)
+var hourTwelve = 'hour-12'
+var newHourTwelve = hourTwelve.split('-')
+    if (currHR < newHourTwelve[1]) {
+        $('#hour-12 textarea').val(twelveText)
+    }
+
+    var oneText = localStorage.getItem('hour-13')
+    $('#hour-13 textarea').val(oneText)
+var hourOne = 'hour-13'
+var newHourOne = hourOne.split('-')
+    if (currHR < newHourOne[1]) {
+        $('#hour-13 textarea').val(oneText)
+    }
