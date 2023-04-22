@@ -54,8 +54,12 @@ var nineText = localStorage.getItem('hour-9')
 var hourNine = 'hour-9'
 var newHourNine = hourNine.split('-')
 if (currHR < newHourNine[1]) {
+    $('#hour-9 textarea').addClass('future')
+} else if (currHR > newHourNine[1]) {
     $('#hour-9 textarea').addClass('past')
-} //else if (currHR > newHourNine[1]) {
+} else if (currHR === newHourNine) {
+    $('#hour-9 textarea').addClass('present')
+}
    
 
 var tenText = localStorage.getItem('hour-10')
@@ -63,7 +67,11 @@ var tenText = localStorage.getItem('hour-10')
 var hourTen = 'hour-10'
 var newHourTen = hourTen.split('-')
     if (currHR < newHourTen[1]) {
+        $('#hour-10 textarea').addClass('future')
+    } else if (currHR > newHourTen[1]) {
         $('#hour-10 textarea').addClass('past')
+    } else if (currHR === newHourTen[1]) {
+        $('#hour-10 textarea').addClass('present')
     }
 
     var elevenText = localStorage.getItem('hour-11')
