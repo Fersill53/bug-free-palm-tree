@@ -22,6 +22,6 @@ The purpose is to use our knowledge gained from the previous weeks and apply the
 html and css framework provided by instructor. javascript written by me.
 
 ## Deployment
-
+https://fersill53.github.io/bug-free-palm-tree/
 
 ![schd.png](https://github.com/Fersill53/bug-free-palm-tree/blob/main/Assets/schd.png)
