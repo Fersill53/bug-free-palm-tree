@@ -24,4 +24,4 @@ html and css framework provided by instructor. javascript written by me.
 ## Deployment
 
 
-![Screenshot 2023-04-18 at 8.37.32 PM.png](https://github.com/Fersill53/cautious-garbanzo/blob/main/Screenshot%202023-04-18%20at%208.37.32%20PM.png)
+![schd.png]()
