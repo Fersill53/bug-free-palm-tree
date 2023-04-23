@@ -17,6 +17,8 @@ const four = document.getElementById('hour-16');
 const five = document.getElementById('hour-17');
 const currHR = dayjs().hour()
 const date = dayjs();
+
+
     $('#currentDay').text(date.format('MMM D, YYYY, HH:mm:ss '));
 
 
