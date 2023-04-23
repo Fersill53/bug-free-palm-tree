@@ -24,4 +24,4 @@ html and css framework provided by instructor. javascript written by me.
 ## Deployment
 
 
-![schd.png]()
+![schd.png](https://github.com/Fersill53/bug-free-palm-tree/blob/main/Assets/schd.png)
