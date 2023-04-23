@@ -91,7 +91,11 @@ var newHourEleven = hourEleven.split('-')
 var hourTwelve = 'hour-12'
 var newHourTwelve = hourTwelve.split('-')
     if (currHR < newHourTwelve[1]) {
+        $('#hour-12 textarea').addClass('future')
+    } else if (currHR > newHourTwelve[1]) {
         $('#hour-12 textarea').addClass('past')
+    } else if (currHR == newHourTwelve[1]) {
+        $('#hour-12 textarea').addClass('current')
     }
 
     var oneText = localStorage.getItem('hour-13')
@@ -99,7 +103,11 @@ var newHourTwelve = hourTwelve.split('-')
 var hourOne = 'hour-13'
 var newHourOne = hourOne.split('-')
     if (currHR < newHourOne[1]) {
+        $('#hour-13 textarea').addClass('future')
+    } else if (currHR > newHourOne[1]) {
         $('#hour-13 textarea').addClass('past')
+    } else if (currHR == newHourOne[1]) {
+        $('#hour-13 textarea').addClass('current')
     }
 
     var twoText = localStorage.getItem('hour-14')
@@ -107,15 +115,23 @@ var newHourOne = hourOne.split('-')
 var hourTwo = 'hour-14'
 var newHourTwo = hourTwo.split('-')
     if (currHR < newHourTwo[1]) {
+        $('#hour-14 textarea').addClass('future')
+    } else if (currHR > newHourTw0[1]) {
         $('#hour-14 textarea').addClass('past')
+    } else if (currHR == newHourTwo[1]) {
+        $('#hour-14 textarea').addClass('current')
     }
 
     var threeText = localStorage.getItem('hour-15')
     $('#hour-15 textarea').val(threeText)
 var hourThree = 'hour-15'
 var newHourThree = hourThree.split('-')
-    if (currHR < newHourTen[1]) {
+    if (currHR < newHourThree[1]) {
+        $('#hour-15 textarea').addClass('future')
+    } else if (currHR > newHourThree[1]) {
         $('#hour-15 textarea').addClass('past')
+    } else if (currHR == newHourThree[1]) {
+        $('#hour-15 textarea').addClass('current')
     }
 
     var fourText = localStorage.getItem('hour-16')
@@ -123,7 +139,11 @@ var newHourThree = hourThree.split('-')
 var hourFour = 'hour-16'
 var newHourFour = hourFour.split('-')
     if (currHR < newHourFour[1]) {
+        $('#hour-16 textarea').addClass('future')
+    } else if (currHR > newHourFour[1]) {
         $('#hour-16 textarea').addClass('past')
+    } else if (currHR == newHourFour[1]) {
+        $('#hour-16 textarea').addClass('current')
     }
 
     var fiveText = localStorage.getItem('hour-17')
@@ -131,7 +151,11 @@ var newHourFour = hourFour.split('-')
 var hourFive = 'hour-17'
 var newHourFive = hourFive.split('-')
     if (currHR < newHourFive[1]) {
+        $('#hour-17 textarea').addClass('future')
+    } else if (currHR > newHourFive[1]) {
         $('#hour-17 textarea').addClass('past')
+    } else if (currHR == newHourFive[1]) {
+        $('#hour-17 textarea').addClass('current')
     }
 
    
