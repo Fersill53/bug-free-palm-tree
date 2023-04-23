@@ -57,7 +57,7 @@ if (currHR < newHourNine[1]) {
     $('#hour-9 textarea').addClass('future')
 } else if (currHR > newHourNine[1]) {
     $('#hour-9 textarea').addClass('past')
-} else if (currHR === newHourNine) {
+} else if (currHR == newHourNine) {
     $('#hour-9 textarea').addClass('present')
 }
    
@@ -70,7 +70,7 @@ var newHourTen = hourTen.split('-')
         $('#hour-10 textarea').addClass('future')
     } else if (currHR > newHourTen[1]) {
         $('#hour-10 textarea').addClass('past')
-    } else if (currHR === newHourTen[1]) {
+    } else if (currHR == newHourTen[1]) {
         $('#hour-10 textarea').addClass('present')
     }
 
@@ -79,7 +79,11 @@ var newHourTen = hourTen.split('-')
 var hourEleven = 'hour-11'
 var newHourEleven = hourEleven.split('-')
     if (currHR < newHourEleven[1]) {
+        $('#hour-11 textarea').addClass('future')
+    } else if (currHR > newHourEleven[1]) {
         $('#hour-11 textarea').addClass('past')
+    } else if (currHR == newHourEleven[1]) {
+        $('#hour-11 textarea').addClass('present')
     }
 
     var twelveText = localStorage.getItem('hour-12')
