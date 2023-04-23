@@ -1,5 +1,8 @@
 
 //$(function () {
+    //$(“document”).ready(function () {
+        
+        
 
 const curDay = document.getElementById('currentDay');
 const saveBtn = document.getElementById('save');
@@ -76,7 +79,7 @@ var newHourTwelve = hourTwelve.split('-')
     } else if (currHR > newHourTwelve[1]) {
         $('#hour-12 textarea').addClass('past')
     } else if (currHR == newHourTwelve[1]) {
-        $('#hour-12 textarea').addClass('current')
+        $('#hour-12 textarea').addClass('present')
     }
 
     var oneText = localStorage.getItem('hour-13')
@@ -88,7 +91,7 @@ var newHourOne = hourOne.split('-')
     } else if (currHR > newHourOne[1]) {
         $('#hour-13 textarea').addClass('past')
     } else if (currHR == newHourOne[1]) {
-        $('#hour-13 textarea').addClass('current')
+        $('#hour-13 textarea').addClass('present')
     }
 
     var twoText = localStorage.getItem('hour-14')
@@ -100,7 +103,7 @@ var newHourTwo = hourTwo.split('-')
     } else if (currHR > newHourTw0[1]) {
         $('#hour-14 textarea').addClass('past')
     } else if (currHR == newHourTwo[1]) {
-        $('#hour-14 textarea').addClass('current')
+        $('#hour-14 textarea').addClass('present')
     }
 
     var threeText = localStorage.getItem('hour-15')
@@ -112,7 +115,7 @@ var newHourThree = hourThree.split('-')
     } else if (currHR > newHourThree[1]) {
         $('#hour-15 textarea').addClass('past')
     } else if (currHR == newHourThree[1]) {
-        $('#hour-15 textarea').addClass('current')
+        $('#hour-15 textarea').addClass('present')
     }
 
     var fourText = localStorage.getItem('hour-16')
@@ -124,7 +127,7 @@ var newHourFour = hourFour.split('-')
     } else if (currHR > newHourFour[1]) {
         $('#hour-16 textarea').addClass('past')
     } else if (currHR == newHourFour[1]) {
-        $('#hour-16 textarea').addClass('current')
+        $('#hour-16 textarea').addClass('present')
     }
 
     var fiveText = localStorage.getItem('hour-17')
@@ -136,7 +139,7 @@ var newHourFive = hourFive.split('-')
     } else if (currHR > newHourFive[1]) {
         $('#hour-17 textarea').addClass('past')
     } else if (currHR == newHourFive[1]) {
-        $('#hour-17 textarea').addClass('current')
+        $('#hour-17 textarea').addClass('present')
     }
 
-   
+//}));
