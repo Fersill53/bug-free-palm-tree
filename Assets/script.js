@@ -100,7 +100,7 @@ var hourTwo = 'hour-14'
 var newHourTwo = hourTwo.split('-')
     if (currHR < newHourTwo[1]) {
         $('#hour-14 textarea').addClass('future')
-    } else if (currHR > newHourTw0[1]) {
+    } else if (currHR > newHourTwo[1]) {
         $('#hour-14 textarea').addClass('past')
     } else if (currHR == newHourTwo[1]) {
         $('#hour-14 textarea').addClass('present')
